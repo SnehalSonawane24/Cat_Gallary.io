@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐱 Random Cat Gallery</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>🐱 Cat Gallery with Filters</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>🐱 Random Cat Gallery</h1>
+    <h1>🐱 Cat Gallery</h1>
 
-    <button id="loadMore">Load More Cats</button>
+    <label for="breedSelect">Filter by Breed:</label>
+    <select id="breedSelect">
+        <option value="">All Breeds</option>
+    </select>
+
+    <label for="limitSelect">Number of Images:</label>
+    <select id="limitSelect">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+    </select>
+
+    <button id="loadMore">Load Cats</button>
 
     <div id="grid" class="grid-container"></div>
 
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
 
 </body>
 </html>

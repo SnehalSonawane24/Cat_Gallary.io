@@ -2,10 +2,16 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f8f9fa;
+    padding: 20px;
 }
 
 h1 {
     color: #333;
+}
+
+label, select, button {
+    margin: 10px;
+    font-size: 16px;
 }
 
 #grid {
@@ -17,8 +23,8 @@ h1 {
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 150px; 
+    height: 150px;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
